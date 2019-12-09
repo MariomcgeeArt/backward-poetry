@@ -1,35 +1,32 @@
-# from random import shuffle
-# import random
+from random import shuffle
+import random
 
 
-txt = "Do not stand at my grave and weep,I am not there; I do not sleep,I am a thousand winds that blow, I am the diamond glints on snow, I am the sun ripened grain, I am the gentle autum rain, When you awaken in the morning's hush, I am the swift uplifting rush, Of quiet birds in circled flight, I am the soft stars that shine at night, Do not stand at my grave and cry, I am not there; I did not die! "
-#Source: https://www.familyfriendpoems.com/poem/do-not-stand-by-my-grave-and-weep-by-mary-elizabeth-frye
-
-
-
-
-# def lines_printed_backward(txt):
-#     x = txt.split(", ")
-#     for word in reversed(x):
-#         print(word)
+txt = "1.Do not stand at my grave and weep, 2.I am not there; I do not sleep, 3.I am a thousand winds that blow, 4.I am the diamond glints on snow, 5.I am the sun ripened grain, 6.I am the gentle autum rain, 7.When you awaken in the morning's hush, 8.I am the swift uplifting rush, 9.Of quiet birds in circled flight, 10.I am the soft stars that shine at night, 11.Do not stand at my grave and cry, 13.  I am not there; I did not die! "
+ #Source: https://www.familyfriendpoems.com/poem/do-not-stand-by-my-grave-and-weep-by-mary-elizabeth-frye
 
 
 
 
-# def lines_printed_rand(txt):
-#     random_lines=[]
-#     x = txt.split(', ') 
-#     for lines in x:
-#         random_lines.append(lines)
+def lines_printed_backward(txt):
+    x = txt.split(", ")
+    for word in reversed(x):
+        print(word)
 
-#     random.shuffle(random_lines)
-#     y = len(random_lines)
 
-#     for i in range(0, y): 
-#         print (random_lines[i])
-    #  x = txt.split(', ')
-    #  for word in x:
-    #      print(random.shuffle(word))
+
+
+def lines_printed_rand(txt):
+    random_lines=[]
+    x = txt.split(', ') 
+    for lines in x:
+        random_lines.append(lines)
+        random.shuffle(random_lines)
+        y = len(random_lines)
+    for i in range(0, y):
+        print (random_lines[i])
+        print("complete")
+
 def idk (txt):
     string = txt   
     length = len(txt)
@@ -39,9 +36,9 @@ def idk (txt):
 
 
             
+lines_printed_rand(txt)
 
-
-idk(txt)
+# idk(txt)
 
 
     # x = txt.split('n, ')
